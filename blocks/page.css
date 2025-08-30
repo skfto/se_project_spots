@@ -2,11 +2,10 @@
     background-color:#FCF5E5;
     min-height: 100vh;
     font-family: Poppins, Arial, Helvetica, sans-serif ;
-    width: 1440px;
-    height: 1416px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .page__section {
-    max-width: 1280px;
-    margin: 0 auto;
+    max-width: 100%;
 }
