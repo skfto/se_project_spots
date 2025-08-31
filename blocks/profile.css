@@ -20,12 +20,23 @@
     font-weight: 500;
     font-size: 32px;
     line-height: 1;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    max-width: 100%;
 }
 
 .profile__description {
     margin: 0 0 114px;
     color: rgba(33, 33, 33, .7);
-    padding: 0;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    max-width: 420px;
 }
 
 .profile__button {
@@ -81,9 +92,25 @@
 
    .profile__name {
     font-size: 20px;
+    margin: 0 0 6px;
+    max-width: 288px;
+   }
+
+   .profile__description {
+    margin: 0 0 20px;
+    max-width: 288px;
+   }
+
+   .profile__button {
+    margin: 0 auto;
+   }
+
+   .profile__column {
+    margin: 0 0 32px;
    }
 
    .profile__add-button {
+    width: 100%;
     margin: 0;
    }
 }
