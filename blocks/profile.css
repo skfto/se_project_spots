@@ -7,6 +7,8 @@
 .profile__avatar {
     margin-right: 20px;
     border-radius: 8px;
+    width: 190px;
+    height: 190px;
 }
 
 .profile__column {
@@ -29,7 +31,7 @@
 }
 
 .profile__description {
-    margin: 0 0 114px;
+    margin: 0;
     color: rgba(33, 33, 33, .7);
     display: -webkit-box;
     overflow: hidden;
@@ -37,6 +39,8 @@
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     max-width: 420px;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .profile__button {
@@ -46,10 +50,14 @@
     max-width: 107px;
     padding: 0;
     cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: auto;
+    white-space: nowrap;
 }
 
 .profile__button:hover {
-    color: rgba (33, 33, 33, 1)
+    color: rgba(33, 33, 33, 1)
 }
 .profile__pencil {
     padding: 0 8px 0 0;
@@ -59,11 +67,13 @@
     margin-left: auto;
     width: 149px;
     height: 52px;
-    margin-top: 138px;
+    margin-top: auto;
     background-color: #212121;
     color: #FCF5E5;
     border-radius: 8px;
     cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .profile__add-button:hover {

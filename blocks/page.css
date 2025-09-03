@@ -4,9 +4,11 @@
     font-family: Poppins, Arial, Helvetica, sans-serif ;
     width: 100%;
     margin: 0 auto;
+    color: #212121;
 }
 
 .page__section {
     max-width: 1280px;
     margin: 0 auto;
+    
 }
