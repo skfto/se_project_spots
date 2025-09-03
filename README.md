@@ -8,14 +8,22 @@
   
 **Intro**
   
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.  
+This project features a fully resposive and interchangeable interface, designed to deliver a seamless user experience across all devices - from desktop to smartphones. With a focus on accessibility and adaptability, the interface automatically adjusts to various screen sizes, ensuring a clean, consistent, and user friendly design no matter where it's viewed.
   
 **Figma**  
   
-* [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
+* This project was designed using Figma, a collaborative interface design tool. I utilized Figma to create the visual elements, layouts, and overall design of the project. It allowed easy to follow ideas and make changes quickly before exporting the final designs.
   
 **Images**  
-  
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster. 
-  
-Good luck and have fun!
+
+The images used in this project were first created and exported from **Figma** as **SVG** files to preserve quality and scalability.
+
+To bring them into the project:
+
+1. I selected the desired frame or element in Figma.  
+2. In the right-hand panel, I opened the **Export** section.  
+3. I selected **SVG** as the export format and saved the files locally.  
+4. Then, using the **terminal**, I navigated to the appropriate project directory.  
+5. I moved the exported SVG files from my local folders into the project using basic terminal commands like `mv` or `cp`.
+
+All SVG files are located in the `images/` folder of this project.
