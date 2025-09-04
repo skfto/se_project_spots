@@ -1,25 +1,26 @@
 .cards {
-    padding: 20px 0 40px;
-    border-bottom: 1px rgba(33, 33, 33, .4) solid;
-    margin: 0;
+  padding: 20px 0 40px;
+  border-bottom: 1px rgba(33, 33, 33, 0.4) solid;
+  margin: 0;
 }
 
 .cards__list {
-    list-style-type: none;
-    margin: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 413px);
-    gap: 40px 20px;
-    justify-content: center;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 413px);
+  gap: 40px 20px;
+  justify-content: center;
+  padding: 0;
 }
 
 @media screen and (max-width: 627px) {
-    .cards {
-        padding: 20px;
-    }
-    .cards__list {
-    grid-template-columns: repeat(auto-fit, 288px); 
+  .cards {
+    padding: 20px;
+  }
+
+  .cards__list {
+    grid-template-columns: repeat(auto-fit, 288px);
     gap: 20px;
-    }
+  }
 }

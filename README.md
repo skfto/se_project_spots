@@ -2,19 +2,26 @@
 
 ### Overview  
 
-* Intro  
-* Figma  
+* Description
+* Technologies and Techniques 
 * Images  
-  
-**Intro**
-  
+* Deployment 
+
+## Description
+
 This project features a fully resposive and interchangeable interface, designed to deliver a seamless user experience across all devices - from desktop to smartphones. With a focus on accessibility and adaptability, the interface automatically adjusts to various screen sizes, ensuring a clean, consistent, and user friendly design no matter where it's viewed.
   
-**Figma**  
+## Technonlogies and Techniques 
+
+* HTML
+* CSS
+* FIGMA
+* RESPONSIVE DESIGN
+
   
 * This project was designed using Figma, a collaborative interface design tool. I utilized Figma to create the visual elements, layouts, and overall design of the project. It allowed easy to follow ideas and make changes quickly before exporting the final designs.
   
-**Images**  
+## Images  
 
 The images used in this project were first created and exported from **Figma** as **SVG** files to preserve quality and scalability.
 
@@ -27,3 +34,7 @@ To bring them into the project:
 5. I moved the exported SVG files from my local folders into the project using basic terminal commands like `mv` or `cp`.
 
 All SVG files are located in the `images/` folder of this project.
+
+## Deployment 
+
+This webpage is deployed to Github pages https://skfto.github.io/se_project_spots/
