@@ -38,5 +38,5 @@ All SVG files are located in the `images/` folder of this project.
 ## Deployment 
 
 * Github Pages: https://skfto.github.io/se_project_spots/
-* Live Demo: https://drive.google.com/file/d/1LUsEFoJmH5_nJVcOZJAEu7ZjPQkMOVtm/view?usp=drive_link
+* Live Demo: https://drive.google.com/file/d/1LUsEFoJmH5_nJVcOZJAEu7ZjPQkMOVtm/view?usp=sharing
 
