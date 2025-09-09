@@ -54,6 +54,7 @@
     font-weight: 500;
     margin-top: auto;
     white-space: nowrap;
+    display: flex;
 }
 
 .profile__button:hover {
