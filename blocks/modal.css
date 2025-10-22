@@ -12,12 +12,15 @@
     font-style: medium;
     font-weight: 500;
     padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .modal_is-opened {
     visibility: visible;
     display: flex;
     justify-content: center;
+    opacity: 1;
 }
 
 .modal__container {
