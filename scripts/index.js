@@ -21,8 +21,6 @@ const addPostCaption = document.querySelector(".card__title");
 editProfileBtn.addEventListener("click", function() {
 editProfileNameInput.value = profileNameEl.textContent;
 editProfileDescriptionInput.value = profileDescriptionEl.textContent;
-addCardImageLink.value = addImageLink.textContent;
-addPostDescription.value = addPostCaption.textContent;
 editProfileModal.classList.add("modal_is-opened");
 });
 
@@ -31,6 +29,8 @@ editProfileModal.classList.remove("modal_is-opened");
 });
 
 newPostBtn.addEventListener("click", function() {
+addCardImageLink.value = addImageLink.textContent;
+addPostDescription.value = addPostCaption.textContent;
 newPostModal.classList.add("modal_is-opened");
 });
 
