@@ -15,45 +15,55 @@ const addPostDescription = newPostModal.querySelector("#post-description-input")
 const profileNameEl = document.querySelector(".profile__name");
 const profileDescriptionEl = document.querySelector(".profile__description");
 
-const addImageLink = document.querySelector(".card__image");
-const addPostCaption = document.querySelector(".card__title");
+addImageLink = document.querySelector(".card__image");
+addPostCaption = document.querySelector(".card__title");
 
-editProfileBtn.addEventListener("click", function() {
-editProfileNameInput.value = profileNameEl.textContent;
-editProfileDescriptionInput.value = profileDescriptionEl.textContent;
-editProfileModal.classList.add("modal_is-opened");
+function openModal(modal) {
+  modal.classList.add("modal_is-opened");
+}
+
+function closeModal(modal) {
+  modal.classList.remove("modal_is-opened");
+}
+
+editProfileBtn.addEventListener("click", function () {
+  editProfileNameInput.value = profileNameEl.textContent;
+  editProfileDescriptionInput.value = profileDescriptionEl.textContent;
+  openModal(editProfileModal);
 });
 
-editProfileCloseBtn.addEventListener("click", function() {
-editProfileModal.classList.remove("modal_is-opened");
+editProfileCloseBtn.addEventListener("click", function () {
+  closeModal(editProfileModal);
 });
 
-newPostBtn.addEventListener("click", function() {
-addCardImageLink.value = addImageLink.textContent;
-addPostDescription.value = addPostCaption.textContent;
-newPostModal.classList.add("modal_is-opened");
+newPostBtn.addEventListener("click", function () {
+  addCardImageLink.value = addImageLink.textContent;
+  addPostDescription.value = addPostCaption.textContent;
+  openModal(newPostModal);
 });
 
-newPostCloseBtn.addEventListener("click", function() {
-newPostModal.classList.remove("modal_is-opened");
+newPostCloseBtn.addEventListener("click", function () {
+  closeModal(newPostModal);
 });
 
 function handleEditProfileSubmit(evt) {
-    profileNameEl.textContent = editProfileNameInput.value;
-    profileDescriptionEl.textContent = editProfileDescriptionInput.value
-    evt.preventDefault();
-    console.log("submitting");
-    editProfileModal.classList.remove("modal_is-opened");
+  evt.preventDefault();
+  profileNameEl.textContent = editProfileNameInput.value;
+  profileDescriptionEl.textContent = editProfileDescriptionInput.value;
+  console.log("submitting");
+  closeModal(editProfileModal);
 }
 
 editProfileForm.addEventListener("submit", handleEditProfileSubmit);
 
 function handleAddCardSubmit(evt) {
-   addImageLink.textContent = addCardImageLink.value;
-   addPostCaption.textContent = addPostDescription.value;
-   evt.preventDefault();
-   console.log("submitting");
-   newPostModal.classList.remove("modal_is-opened");
+  evt.preventDefault();
+  addImageLink.textContent = addCardImageLink.value;
+  addPostCaption.textContent = addPostDescription.value;
+  console.log(addCardImageLink.value);
+  console.log(addPostDescription.value);
+  closeModal(newPostModal);
+  evt.target.reset();
 }
 
 addNewPost.addEventListener("submit", handleAddCardSubmit);
