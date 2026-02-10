@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -43,11 +43,7 @@
           </div>
 
           <button class="profile__add-button" type="button">
-            <img
-              src="./images/plus.svg"
-              alt="New Post"
-              class="profile__plus"
-            />
+            <img src="./images/plus.svg" alt="New Post" class="profile__plus" />
             New Post
           </button>
         </section>
@@ -56,19 +52,13 @@
           <ul class="cards__list">
             <template id="card-template">
               <li class="card">
-                <button
-                  class="card__delete-button"
-                  type="button"
-                ></button>
+                <button class="card__delete-button" type="button"></button>
 
                 <img src="#" alt="" class="card__image" />
 
                 <div class="card__content">
                   <h2 class="card__title"></h2>
-                  <button
-                    class="card__like-button"
-                    type="button"
-                  ></button>
+                  <button class="card__like-button" type="button"></button>
                 </div>
               </li>
             </template>
@@ -95,7 +85,11 @@
                 type="text"
                 class="modal__input"
                 placeholder="Type your name"
+                minlength="2"
+                maxlength="40"
+                required
               />
+              <span class="modal__error"></span>
             </label>
 
             <label for="profile-description-input" class="modal__label">
@@ -105,7 +99,11 @@
                 type="text"
                 class="modal__input"
                 placeholder="Describe Yourself"
+                minlength="2"
+                maxlength="200"
+                required
               />
+              <span class="modal__error"></span>
             </label>
 
             <button type="submit" class="modal__submit-btn">Save</button>
@@ -130,6 +128,7 @@
                 placeholder="Paste a link to the picture"
                 required
               />
+              <span class="modal__error"></span>
             </label>
 
             <label for="post-description-input" class="modal__label">
@@ -139,7 +138,11 @@
                 type="text"
                 class="modal__input"
                 placeholder="Type your caption"
+                minlength="2"
+                maxlength="30"
+                required
               />
+              <span class="modal__error"></span>
             </label>
 
             <button type="submit" class="modal__submit-btn">Save</button>
