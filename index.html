@@ -89,7 +89,7 @@
                 maxlength="40"
                 required
               />
-              <span class="modal__error"></span>
+              <span id="profile-name-input-error" class="modal__error"></span>
             </label>
 
             <label for="profile-description-input" class="modal__label">
@@ -103,7 +103,10 @@
                 maxlength="200"
                 required
               />
-              <span class="modal__error"></span>
+              <span
+                id="profile-description-input-error"
+                class="modal__error"
+              ></span>
             </label>
 
             <button type="submit" class="modal__submit-btn">Save</button>
@@ -128,7 +131,7 @@
                 placeholder="Paste a link to the picture"
                 required
               />
-              <span class="modal__error"></span>
+              <span id="card-image-input-error" class="modal__error"></span>
             </label>
 
             <label for="post-description-input" class="modal__label">
@@ -142,7 +145,10 @@
                 maxlength="30"
                 required
               />
-              <span class="modal__error"></span>
+              <span
+                id="post-description-input-error"
+                class="modal__error"
+              ></span>
             </label>
 
             <button type="submit" class="modal__submit-btn">Save</button>
@@ -165,5 +171,6 @@
     </div>
 
     <script src="./scripts/index.js"></script>
+    <script src="./scripts/validation.js"></script>
   </body>
 </html>
