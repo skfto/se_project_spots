@@ -129,6 +129,10 @@
   cursor: pointer;
 }
 
+.modal__submit-btn--disabled {
+  background-color: rgba(33, 33, 33, 0.5);
+}
+
 .modal__image_container {
   position: relative;
 }
