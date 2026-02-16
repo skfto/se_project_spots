@@ -27,12 +27,16 @@ const hasInvalidInput = (inputList) => {
 
 const toggleButtonState = (inputList, buttonEl) => {
   if (hasInvalidInput(inputList)) {
-    buttonEl.disabled = true;
-    buttonEl.classList.add("modal__submit-btn--disabled");
+    disableButton(buttonEl);
   } else {
     buttonEl.disabled = false;
     buttonEl.classList.remove("modal__submit-btn--disabled");
   }
+};
+
+const disableButton = (buttonEl) => {
+  buttonEl.disabled = true;
+  buttonEl.classList.add("modal__submit-btn--disabled");
 };
 
 const setEventListeners = (formEl) => {
@@ -42,7 +46,7 @@ const setEventListeners = (formEl) => {
   console.log(inputList);
   console.log(buttonElement);
 
-  //   toggleButtonState(inputList, buttonElement);
+  toggleButtonState(inputList, buttonElement);
 
   inputList.forEach((inputElement) => {
     inputElement.addEventListener("input", function () {
