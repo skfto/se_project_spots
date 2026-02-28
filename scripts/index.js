@@ -108,21 +108,40 @@ const handleEscClose = (evt) => {
   }
 };
 
+function closeOverlay(evt) {
+  if (evt.target === modal) {
+    closeModal(modal);
+  }
+}
+
 // Close Modal Functions
 const closeModal = (modal) => {
   modal.classList.remove("modal_is-opened");
   document.removeEventListener("keydown", handleEscClose);
+
+  function closeModal(modal) {
+    modal.classList.remove("modal_is-opened");
+    document.removeEventListener("keydown", handleEscClose);
+
+    modal.removeEventListener("mousedown", modal._overlayHandler);
+  }
 };
 
 // Open Modal Functions
 const openModal = (modal) => {
   modal.classList.add("modal_is-opened");
   document.addEventListener("keydown", handleEscClose);
-  modal.addEventListener("mousedown", (evt) => {
+  modal.addEventListener("mousedown", closeOnOverlay);
+
+  function closeOnOverlay(evt) {
     if (evt.target === modal) {
       closeModal(modal);
     }
-  });
+  }
+
+  modal._overlayHandler = closeOnOverlay;
+
+  modal.addEventListener("mousedown", modal._overlayHandler);
 };
 
 editProfileBtn.addEventListener("click", function () {
