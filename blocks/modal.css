@@ -48,13 +48,13 @@
   padding: 0;
 }
 
-.modal__close_btn_preview {
+modalclose-btn_type_preview {
   top: 0;
   right: -52.5px;
   background-image: url(../images/white-x.svg);
 }
 
-.modal__close_btn_preview:hover {
+modalclose-btn_type_preview :hover {
   background-image: url(../images/hover-x.svg);
 }
 
@@ -133,7 +133,7 @@
   background-color: rgba(33, 33, 33, 0.5);
 }
 
-.modal__image_container {
+.modalimage_container {
   position: relative;
 }
 
