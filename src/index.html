@@ -9,21 +9,23 @@
       content="The profile where you can be whoever you want to be! Create a personalized profile and tailor it to your digital hearts desire. Sign-up now!"
     />
     <meta name="keywords" content="Profile, create, sign-up" />
-    <link rel="stylesheet" href="./pages/index.css" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <title>Spots</title>
   </head>
 
   <body>
     <div class="page">
       <header class="header">
-        <img src="./images/logo.svg" alt="Spots" class="header__logo" />
+        <img
+          src="<%=require('./images/logo.svg')%>"
+          alt="Spots"
+          class="header__logo"
+        />
       </header>
 
       <main class="content">
         <section class="profile page__section">
           <img
-            src="./images/avatar.jpg"
+            src="<%=require('./images/avatar.jpg')%>"
             alt="Bessie Coleman"
             class="profile__avatar"
           />
@@ -34,7 +36,7 @@
 
             <button class="profile__button" type="button">
               <img
-                src="./images/edit-pencil.svg"
+                src="<%=require('./images/edit-pencil.svg')%>"
                 alt="Edit Pencil"
                 class="profile__pencil"
               />
@@ -43,7 +45,11 @@
           </div>
 
           <button class="profile__add-button" type="button">
-            <img src="./images/plus.svg" alt="New Post" class="profile__plus" />
+            <img
+              src="<%=require('./images/plus.svg')%>"
+              alt="New Post"
+              class="profile__plus"
+            />
             New Post
           </button>
         </section>
@@ -173,8 +179,5 @@
         </div>
       </div>
     </div>
-
-    <script src="./scripts/index.js"></script>
-    <script src="./scripts/validation.js"></script>
   </body>
 </html>
